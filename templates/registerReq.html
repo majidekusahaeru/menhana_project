@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/registerReq.css')}}">
+    <title>新規お店の登録依頼</title>
+</head>
+
+<body>
+    <ul>
+        <h1>新規お店の登録依頼</h1>
+        <h2>麵と向かって話そうぜ</h2>
+    </ul>
+    <hr size="1">
+
+    <div class="main">
+            <table class="main">
+              <td>店舗名</td>
+              <td>依頼日</td>
+                {% for i in range(shop | length) %}
+                <tr>
+                  <th><a href="{{url_for('shopRegist',id=shop[i][0])}}">{{shop[i][0]}}</a></th>
+                  <th>{{shop[i][1]}}</th>
+                </tr>
+                {% endfor %}
+              </table>
+
+    </div>
+</body>
+
+</html>

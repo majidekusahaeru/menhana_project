@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>麵と向かって話そうぜ</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='favicon/favicon.ico')}}">
+    
+</head>
+
+<body>
+        <img src="{{url_for('static',filename='img/めんはな.jpg')}}">
+<div class="nav">
+    <nav>
+        <ul>
+          <li>
+            <a href="{{url_for('top')}}">トップ</a>
+          </li>
+          <li>
+            <a href="{{url_for('system')}}">ラーメンとは</a>
+          </li>
+          <li>
+            <a href="#">順位</a>
+          </li>
+          <li>
+            <a href="#">主観順位</a>
+          </li>
+          <li>
+            <a href="{{url_for('map')}}">地域ラーメン</a>
+          </li>
+          <li>
+            <a href="#">番外編</a>
+          </li>
+          <li>
+            <a href="#">店舗追加依頼</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+        <div class="flame02">
+            <form id="form4" action="自分のサイトURL" method="get">
+                <div class='check-container'>
+                    <input type='checkbox' id='one'>
+                    <label for='one'></label>
+                    <span class='tag'>醤油系</span>
+                </div>
+                <div class='check-container'>
+                    <input type='checkbox' id='two'>
+                    <label for='two'></label>
+                    <span class='tag'>塩系</span>
+                </div>
+                <div class='check-container'>
+                    <input type='checkbox' id='three'>
+                    <label for='three'></label>
+                    <span class='tag'>味噌系</span>
+                </div>
+                <div class='check-container'>
+                    <input type='checkbox' id='for'>
+                    <label for='for'></label>
+                    <span class='tag'>豚骨</span>
+                </div><br>
+                <div class='check-container'>
+                    <input type='checkbox' id='five'>
+                    <label for='five'></label>
+                    <span class='tag'>家系</span>
+                </div>
+                <div class='check-container'>
+                    <input type='checkbox' id='six'>
+                    <label for='six'></label>
+                    <span class='tag'>次郎系</span>
+                </div>
+                <div class='check-container'>
+                    <input type='checkbox' id='seven'>
+                    <label for='seven'></label>
+                    <span class='tag'>担々麺</span>
+                </div>
+                <div class='check-container'>
+                    <input type='checkbox' id='eight'></input>
+                    <label for='eight'></label>
+                    <span class='tag'>その他</span>
+                </div>
+                <form id="form1" action="自分のサイトURL">
+                    <input id="sbox"  id="s" name="s" type="text" placeholder="店舗名" />
+                    <input id="sbtn" type="submit" value="検索" />
+                </form>
+    </div>
+    <div class="rank">
+    <figure class="container">
+    <img src="{{url_for('static',filename='img/順位.png')}}" width="150">
+</figure>
+</div>
+<div class="rank2">
+<img src="{{url_for('static',filename='img/壱.png')}}" width="70" height="70">
+    <img src="{{url_for('static',filename='img/弐.png')}}" width="70" height="70" hspace="300">
+    <img src="{{url_for('static',filename='img/参.png')}}" width="70" height="70">
+
+</div>
+<div class="rank2">
+    <img src="{{url_for('static',filename='img/カツ中華.jpg')}}" width="200" >
+    <img src="{{url_for('static',filename='img/いおり.jpg')}}" width="200"  hspace="180">
+    <img src="{{url_for('static',filename='img/満ニラ.jpg')}}" width="200" >
+</div>
+</body>
+
+</html>

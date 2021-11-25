@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/admin.css')}}">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1 class="var1">管理者ログイン</h1>
+    <form action="{{url_for('login')}}" method="POST">
+        <h1 class="var2">ID：
+        <input class ="var3" type="text" placeholder="ID" name="id" required></h1>
+        <h1 class="var4">パスワード：
+        <input class="var5" type="password" name="pw" required></h1>
+        <input class="login_button1" type="submit" value="ログイン">
+    </form>
+
+    
+        
+</html>
+

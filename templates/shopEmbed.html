@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/shopEmbed.css')}}">
+        
+        <title>新規お店の登録</title>
+    </head>
+    
+    <body>
+
+        <h2>新規お店の登録</h2>
+        <hr>
+        <p class="var1"><font size="5">店舗名<input class="var2" type="text" value={{shopname}} name="address" size="30"></font></p>
+        
+        <p><font size="5">店舗名（ひらがな）<input class="var3" type="text" name="address" size="30"></font></p>
+        
+        <p class="var4"><font size="5">郵便番号<input class="var5" type="text" name="address" size="30"></font></p>
+        
+        <p><font size="5">住所（市町村）<input class="var6" type="text" name="address" size="30"></font></p>
+        
+        <p class="var7"><font size="5">住所（番地）<input class="var8" type="text" name="address" size="30"></font></p>
+        
+        <p class="var9"><font size="5">カテゴリ
+        <select class="var10">
+        <option name="one" value="syoyu">醤油</option>
+        <option name="two" value="miso">味噌</option>
+        <option name="tree" value="sio">塩</option>
+        <option name="four" value="tonkotu">豚骨</option>
+        <option name="five" value="iekei">横浜家系</option>
+        <option name="six" value="ziroukei">次郎計</option>
+        <option name="seven" value="tantanmen">担々麺</option>
+        <option name="eight" value="other">その他</option>
+        </select>
+        </font></p>
+        
+        <p class="var11"><font size="5">商品名<input class="var12" type="text" value={{product}} name="address" size="30"></font></p>
+        
+        <p class="var13"><font size="5">電話番号<input class="var14" type="text" name="address" size="30"></font></p>
+        
+    
+        <p class="var15"><font size="5">駐車場<nobr class="var16"><input type="radio" name="address">あり</nobr>
+    
+        <nobr class="var17"><input type="radio" name="address">なし</nobr></font></p>
+        
+        <p class="var18"><font size="5">営業時間<input class="var19" type="text" name="address" size="30"></font></p>
+        
+        <p class="var20"><font size="5">レビュー<input class="var21" type="text" name="address" size="30"></font></p>
+        
+        <p class="var22"><font size="5">地図<input class="var23" type="text" name="address" size="30"></font></p>
+        
+        <p class="var24"><font size="5">定休日<input class="var25" type="text" name="address" size="30"></font></p>
+        
+        <p class="var26"><font size="5">アクセス<input class="var27" type="text" name="address" size="30"></font></p>
+        
+        <p class="var28"><font size="5">画像<nobr class="var29"><input type="file" name="address" accept=".png, .jpg, .jpeg, .pdf, .doc" size="30"></nobr></font></p>
+        
+    </body>
+
+</html>

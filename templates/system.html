@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>麵と向かって話そうぜ</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static',filename='js/sample.js')}}"></script>
+    <link rel="icon" href="{{url_for('static', filename='favicon/favicon.ico')}}">
+    
+</head>
+
+<body background="{{url_for('static',filename='img/和紙2.jpg')}}">
+    <div class="left">
+        <img src="{{url_for('static',filename='img/系統別拉麺について.png')}}" width="30%">
+    </div>
+    <div class= "right">
+    <img src="{{url_for('static',filename='img/麺と向かって話そうぜ.png')}}" width="20%">
+</div>
+        <h6></h6>
+<div class="center2">
+    <h1>ラーメンとは
+    </h1>
+    <p>ラーメンとは、中華麺とスープを主とし、様々な具（チャーシュー、メンマ、味付け玉子、刻み葱、海苔など）<br>を組み合わせた麺料理。
+    漢字表記は拉麺、老麺または柳麺。別名は中華そばおよび支那そば、南京そばで、<br>
+    「らーめん」、「らあめん」、「らぁめん」、「ら〜めん」「らー麺」と平仮名で表記されることもある。</p>
+    <div class="center3">
+    <div class="flame03">
+        <h2>醤油ラーメン</h2>
+        <img src="{{url_for('static',filename='img/醤油.jpg')}}" width="25%">
+        <!-- <div class ="left2">
+        <p>スープに醤油タレを使用したラーメン。「中華そば」「正油ラーメン」と表現<br>
+        される場合もある。1910年（明治43年）に浅草の『 來々軒 』で出された東京<br>
+        ラーメンが初出であり、ラーメンの原型である。</p><br><br><br><br> -->
+        <h2>横浜家系ラーメン</h2>
+        <img src="{{url_for('static',filename='img/家系.jpg')}}" width="25%">
+        <h2>味噌ラーメン</h2>
+        <img src="{{url_for('static',filename='img/家系.jpg')}}" width="25%">
+        <h2>塩ラーメン</h2>
+        <img src="{{url_for('static',filename='img/塩.jpg')}}" width="25%">
+        <h2>豚骨ラーメン</h2>
+        <img src="{{url_for('static',filename='img/豚骨.jpg')}}" width="25%">
+        <h2>担々麺</h2>
+        <img src="{{url_for('static',filename='img/担々麺.jpg')}}" width="25%">
+        <h2>鶏白湯ラーメン</h2>
+        <img src="{{url_for('static',filename='img/鶏白湯.jpg')}}" width="25%">
+        <h2>次郎系ラーメン</h2>
+        <img src="{{url_for('static',filename='img/次郎系.jpg')}}" width="25%">
+    </div>
+    </div>
+    
+</div>
+</div>
+    <div id="navArea">
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li><a href="{{url_for('top')}}">トップ</a></li>
+                    <li><a href="{{url_for('system')}}">ラーメンとは</a></li>
+                    <li><a href="#">順位</a></li>
+                    <li><a href="#">主観順位</a></li>
+                    <li><a href="{{url_for('map')}}">地域ラーメン</a></li>
+                    <li><a href="#">番外編</a></li>
+                    <li><a href="#">店舗追加依頼</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/sample.js')}}"></script>
+</body>
+
+</html>
